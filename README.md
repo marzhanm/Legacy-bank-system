@@ -4,7 +4,11 @@ Legacy Bank System or Balance Manager is A project to manage bank account of use
 
 Members:
 Mutalova Marzhan
+
 Nurislam Galizhan
+
 Tuleubekova Togzhan
+
 Arim Askhatuly
+
 Azel Zhumagul

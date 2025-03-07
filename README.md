@@ -1,1 +1,1 @@
-final project for sdu software architecture
+Advanced PM. Banking app.

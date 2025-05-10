@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.IncomeViewController">
+   <children>
+      <HBox prefHeight="70.0" prefWidth="400.0" style="-fx-background-color: #5F9EA0;">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <left>
+                  <Button fx:id="backButton" mnemonicParsing="false" style="-fx-background-color: Transparent;" text="&lt; Back" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </left>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Income" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Text>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <HBox layoutX="14.0" layoutY="40.0" prefHeight="35.0" prefWidth="380.0">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <left>
+                        <Text fill="#000000c2" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount:" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                     </left>
+                  </BorderPane>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <left>
+                        <TextField fx:id="amountField" promptText="0 KZT" style="-fx-background-color: transparent; -fx-border-color: #5F9EA0;" BorderPane.alignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor></TextField>
+                     </left>
+                  </BorderPane>
+               </children>
+            </HBox>
+            <HBox layoutX="14.0" layoutY="100.0" prefHeight="35.0" prefWidth="380.0">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <left>
+                        <Text fill="#000000c2" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Category" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                     </left>
+                  </BorderPane>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <left>
+                        <ChoiceBox fx:id="categoryChoiceBox" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: #5F9EA0;" BorderPane.alignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ChoiceBox>
+                     </left>
+                  </BorderPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <HBox prefHeight="130.0" prefWidth="400.0">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <Button fx:id="cancelButton" mnemonicParsing="false" prefHeight="46.0" prefWidth="110.0" style="-fx-background-color: transparent; -fx-border-color: #919191;" text="Cancel" textFill="#919191" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <Button fx:id="OkButton" mnemonicParsing="false" prefHeight="46.0" prefWidth="110.0" style="-fx-background-color: transparent; -fx-border-color: #5F9EA0;" text="OK" textFill="CADETBLUE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </center>
+            </BorderPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>
